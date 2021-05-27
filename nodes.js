@@ -13,7 +13,7 @@ const node1 = new Node(1,"I was born",node3)
 
 class linkedList {
     constructor(age,highlight){
-        this.head=new Node(age.highlight)
+        this.head=new Node(age,highlight)
     }
 insertbeginning=(age,highlight)=>{
     const node=new Node(age,highlight,this.head)
@@ -23,7 +23,7 @@ getlinklist = ()=>{
     let current=this.head
     while(current){
         console.log(`year :${current.age},highlight :${current.highlight}`)
-        current=current.nextNode0
+        current=current.nextNode
     }
 }
 insertHighlight=(age)=>{
@@ -35,7 +35,7 @@ insertHighlight=(age)=>{
         }else{
             let highlight=prompt(`enter highlight for year: ${currentAge} `)
             let newNode = new Node(currentAge,highlight,current.nextNode)
-            current.nextNode=new Node
+            current.nextNode=newNode
             current=newNode
         }
     }
