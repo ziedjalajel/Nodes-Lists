@@ -62,7 +62,7 @@ class Node{
   } 
   const ride = new Queue()
   console.log(ride.waitingTime)
-  ride.enqueue(4)
+  ride.enqueue(6)
   ride.enqueue(8)
   ride.enqueue(20)
   console.log(ride.waitingTime)
